@@ -1,30 +1,27 @@
-N_control = 50
-male = c(0.25, 0.5, 0.75)
-age_mean = c(40, 50, 60)
-age_sd = c(20, 30, 40)
-male_effect = c(-0.1, 0, 0.1)
-age_effect = c(0, 0.05, 0.1)
-treatment_effect = c(-0.5, 0, 0.5, 1)
-settings = expand.grid( male=male,
-                        age_mean=age_mean,
-                        age_sd=age_sd,
-                        male_effect=male_effect,
-                        age_effect=age_effect,
-                        treatment_effect=treatment_effect
-                      )
+# N_control = 50
+# male = c(0.25, 0.5, 0.75)
+# age_mean = c(40, 50, 60)
+# age_sd = c(20, 30, 40)
+# male_effect = c(-0.1, 0, 0.1)
+# age_effect = c(0, 0.05, 0.1)
+# treatment_effect = c(-0.5, 0, 0.5, 1)
+# settings = expand.grid( male=male,
+#                         age_mean=age_mean,
+#                         age_sd=age_sd,
+#                         male_effect=male_effect,
+#                         age_effect=age_effect,
+#                         treatment_effect=treatment_effect
+#                       )
+# 
+# 
+# age = c("same", "rev", "even")
+# sex = c("same", "rev", "even")
+# settings2 = expand.grid(age=age, sex=sex)
+# settings2$age = age[settings2$age]
+# settings2$sex = sex[ settings2$sex ]
+# 
+# B = 1000
 
-
-age = c("same", "rev", "even")
-sex = c("same", "rev", "even")
-settings2 = expand.grid(age=age, sex=sex)
-settings2$age = age[settings2$age]
-settings2$sex = sex[ settings2$sex ]
-
-B = 1000
-
-age = c( "20-29", "30-39", "40-49", "50-59", "60-69", "70+" )
-fem = c(19, 38, 54, 84, 120, 93)
-mal = c(40, 75, 78, 125, 171, 150)
 
 #   Age Female Male
 # 20-29     19   40
