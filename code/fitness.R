@@ -1,3 +1,5 @@
+#' Function to calculate the fitness of a possible study allocation
+#' 
 fitness = function( bits, trt, age_effect, male_effect, trt_effect, B=1 ) {
   ctl = decode(bits)
   
@@ -32,5 +34,7 @@ fitness = function( bits, trt, age_effect, male_effect, trt_effect, B=1 ) {
   }
   
   # mean(pp<0.05)
+  
+  # return the mean Z-statistic for the treatment effect
   mean(zz)
 }
