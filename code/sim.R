@@ -25,7 +25,7 @@ trt$male = with(trt, ifelse(sex=="mal", 1, 0))
 
 
 # run the genetic algorithm - age, sex, and treatment effects are hard-coded
-system.time( result <- ga(type = "binary",
+system.time( GA1 <- ga(type = "binary",
                           fitness = fitness,
                           nBits = 200,
                           trt=trt_short,
